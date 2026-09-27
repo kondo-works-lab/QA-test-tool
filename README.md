@@ -1,2 +1,29 @@
-# QA-test-tool
-検査表の入力チェック・電子印鑑作成/押印・Excel/PDF保存を自動化するExcel VBAツール。Excel VBA tool for automating inspection sheet workflows — input validation, digital seal stamping, and export to Excel/PDF.
+# QA試験 — 検査表自動化ツール
+
+Excel VBAで作成した検査表業務の自動化ツールです。
+
+## 機能
+
+- **入力チェック**: 検査表の入力内容をチェック
+- **電子印鑑**: 電子印鑑の作成・押印
+- **Excel保存**: 検査表をExcel形式で保存
+- **PDF保存**: 検査表をPDF形式で保存(保存先フォルダを選択可能)
+- **保存履歴**: 保存した検査表の履歴を管理
+
+## シート構成
+
+- `検査表`: 検査項目の入力・チェックを行うメインシート
+- `検査項目一覧`: 検査項目のマスタデータ
+- `電子印鑑`: 電子印鑑の作成・管理
+- `保存履歴`: 保存履歴の記録
+
+## 使用technology
+
+- Excel VBA
+
+## 使い方
+
+1. `QA試験.xlsm` を開く(マクロを有効にする)
+2. `検査表` シートで検査項目を入力
+3. 電子印鑑を押印
+4. Excel/PDF形式で保存
