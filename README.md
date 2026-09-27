@@ -1,6 +1,6 @@
 # QA試験 — 検査表自動化ツール(最終形態)
 
-> 本ツールは検査表自動化シリーズの完成版です。要件の異なる派生版([検査表2](https://github.com/kondo-works-lab/Inspection-sheets-checker2)、[検査表3]https://github.com/kondo-works-lab/Inspection-sheets-checker3)で得た知見を踏まえ、汎用性・使いやすさを高めた形にまとめています。
+> 本ツールは検査表自動化シリーズの完成版です。要件の異なる派生版([検査表2](https://github.com/kondo-works-lab/Inspection-sheets-checker2)、[検査表3]https://github.com/kondo-works-lab/Inspection-sheets-checker3))で得た知見を踏まえ、汎用性・使いやすさを高めた形にまとめています。
 
 Excel VBAで作成した検査表業務の自動化ツールです。
 ## 機能
