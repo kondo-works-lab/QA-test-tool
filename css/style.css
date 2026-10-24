@@ -1,0 +1,290 @@
+/* ===== 色・サイズの設定（ここを変えるとサイト全体の色が変わります） ===== */
+:root {
+  --color-main: #3ccfb4;        /* メインカラー（パールアクアグリーン系） */
+  --color-main-dark: #0f766e;   /* ボタンなど濃い緑 */
+  --color-main-light: #e9fbf6;  /* 薄いミントの背景 */
+  --color-text: #1f3b3a;        /* 本文の文字色 */
+  --color-sub: #4b6b68;         /* 補足の文字色 */
+  --color-white: #ffffff;
+  --max-width: 1040px;          /* コンテンツの最大幅 */
+}
+
+/* ===== 基本 ===== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 72px;
+}
+
+body {
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Noto Sans JP", Meiryo, sans-serif;
+  color: var(--color-text);
+  background: var(--color-white);
+  line-height: 1.8;
+}
+
+a {
+  color: inherit;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* ===== ヘッダー ===== */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.95);
+  border-bottom: 1px solid var(--color-main-light);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: var(--color-main-dark);
+}
+
+.nav {
+  display: flex;
+  gap: 24px;
+}
+
+.nav a {
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.nav a:hover {
+  color: var(--color-main-dark);
+}
+
+/* ===== ファーストビュー ===== */
+.hero {
+  padding: 96px 0;
+  background: linear-gradient(135deg, var(--color-main-light) 0%, #c9f5ea 50%, #a8ecdc 100%);
+}
+
+.hero-label {
+  margin: 0 0 12px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--color-main-dark);
+  letter-spacing: 0.05em;
+}
+
+.hero-title {
+  margin: 0 0 24px;
+  font-size: 2.4rem;
+  line-height: 1.4;
+}
+
+.hero-text {
+  margin: 0 0 32px;
+  color: var(--color-sub);
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+/* ===== ボタン ===== */
+.btn {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: 999px;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+  transition: opacity 0.2s;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+.btn-primary {
+  background: var(--color-main-dark);
+  color: var(--color-white);
+  border: 2px solid var(--color-main-dark);
+}
+
+.btn-outline {
+  background: var(--color-white);
+  color: var(--color-main-dark);
+  border: 2px solid var(--color-main-dark);
+}
+
+/* ===== セクション共通 ===== */
+.section {
+  padding: 80px 0;
+}
+
+.section-tinted {
+  background: var(--color-main-light);
+}
+
+.section-title {
+  margin: 0 0 16px;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 48px;
+  height: 4px;
+  margin: 12px auto 0;
+  border-radius: 2px;
+  background: var(--color-main);
+}
+
+.section-lead {
+  margin: 0 0 40px;
+  text-align: center;
+  color: var(--color-sub);
+}
+
+/* ===== サービス ===== */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.card {
+  padding: 32px 24px;
+  border: 1px solid #d4f3eb;
+  border-top: 6px solid var(--color-main);
+  border-radius: 12px;
+  background: var(--color-white);
+}
+
+.card-title {
+  margin: 0 0 16px;
+  font-size: 1.15rem;
+  color: var(--color-main-dark);
+}
+
+.card-list {
+  margin: 0;
+  padding-left: 1.2em;
+}
+
+/* ===== 代表者紹介 ===== */
+.about-box {
+  max-width: 720px;
+  margin: 24px auto 0;
+  padding: 32px;
+  border-radius: 12px;
+  background: var(--color-white);
+}
+
+.about-name {
+  margin-top: 0;
+  font-weight: 700;
+}
+
+/* ===== お問い合わせ ===== */
+.contact-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+/* ===== フッター ===== */
+.footer {
+  padding: 32px 0;
+  background: var(--color-main-dark);
+  color: var(--color-white);
+  text-align: center;
+}
+
+.footer-name {
+  margin: 0 0 4px;
+  font-weight: 700;
+}
+
+.footer-copy {
+  margin: 0;
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+/* ===== スマートフォン（幅768px以下） ===== */
+@media (max-width: 768px) {
+  .header-inner {
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    gap: 4px;
+  }
+
+  .nav {
+    gap: 16px;
+  }
+
+  .nav a {
+    font-size: 0.85rem;
+  }
+
+  html {
+    scroll-padding-top: 96px;
+  }
+
+  .hero {
+    padding: 64px 0;
+  }
+
+  .hero-title {
+    font-size: 1.45rem;
+  }
+
+  .pc-only {
+    display: none;
+  }
+
+  .hero-buttons .btn,
+  .contact-buttons .btn {
+    width: 100%;
+  }
+
+  .section {
+    padding: 56px 0;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .about-box {
+    padding: 24px;
+  }
+}
