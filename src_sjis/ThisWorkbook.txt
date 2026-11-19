@@ -1,0 +1,11 @@
+Option Explicit
+
+'==============================================================
+' ThisWorkbook のコード（VBE の ThisWorkbook にこの内容を貼り付ける）
+'   表紙の品名変更・明細シートの入力変更を modCover.HandleSheetChange に渡す。
+'   明細シートは品名に応じて作り直すため、シートごとではなくブックのイベントで受ける。
+'==============================================================
+
+Private Sub Workbook_SheetChange(ByVal Sh As Object, ByVal Target As Range)
+    HandleSheetChange Sh, Target
+End Sub
